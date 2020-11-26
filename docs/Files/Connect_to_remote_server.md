@@ -26,15 +26,11 @@ computers avaliable for your laboratory work.
 
 If you wish to connect from your mobile, or desktop, then Visit [mosh's
 Download page](https://mosh.org/#getting). Follow instructions to get the
-software and to install it. You may also install it as `Chrome` browser's
-extension. Visit [Chrome Store](https://chrome.google.com/webstore/detail/mosh/ooiklbnjmhbcgemelgfhaeaocllobloj)
-for further information.
+software and to install it.
 
-From Linux Desktop / Laptop, open "Command line Terminal" (also called
-console), using Ctrl+Atl+t (may vary depending on Linux Distribution and due
-to customisation). Using GUI, you may also launch it.
-
-Further help may be taken from: [WikiHow](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu)
+Launch `mosh`, use your userID, `code.gndec.ac.in` as server name, and `22`
+as port to connect remote server. Read the response from computer very carefully
+and act accordingly. 
 
 Once you have opened terminal, which is usually a big black rectangular
 area, in which there is a small solid rectangle (of the size of a single
@@ -79,7 +75,7 @@ by the computer, very carefully.)
 
 After this, once connection established (make sure Internet is working, and
 there is not typing error/mistake), remote server will request you for
-password:
+password. Enter you 
 
 	radha@ubuntu:~$ ls
 	radha@ubuntu:~$ xmake create -l c first
