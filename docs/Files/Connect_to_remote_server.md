@@ -12,7 +12,7 @@ know the server's name, your user ID, password and the port number, which
 allow you to connect the server. This needed information is tabulated below:
 
 | Item | Value |
-| ---:|:--- |
+|:--- |:--- |
 | GNU/Linux Server | code.gndec.ac.in or code.gdy.club |
 | User ID | YourRollNumber |
 | Password | If you don't know, contact office of Applied Science Dept. |
@@ -52,10 +52,10 @@ Type following command.
 
 	mosh <UserID>@<ServerName>
 
-If you UserID is 19123015, and knowing that we will be working on server
+If you UserID is 20123015, and knowing that we will be working on server
 code.gdy.club, then you need to type:
 
-	mosh 1923015@code.gdy.club
+	mosh 2023015@code.gdy.club
 
 First time, if anyone try to connect to a new remote server, then he will be
 presented with following text:
@@ -73,31 +73,38 @@ you will be surprised (I say, rather **_SHOCKED_**) by getting messages like:
 	Please type 'yes' or 'no': yes
 
 So you need to type three letters (characters) as instructed by the computer,
-which are y e s. Single character will not work.
+which are y e s. Single character will not work. (Exact message / instruction
+may be different, so bottom line is that you need to read message displayed
+by the computer, very carefully.)
 
 After this, once connection established (make sure Internet is working, and
 there is not typing error/mistake), remote server will request you for
 password:
 
-	hsrai@code.gdy.club's password:<Enter your password, and press Enter: You won't se anything as you type> 
-	Creating directory '/home/hsrai'.
-	Linux computer-centre 4.19.0-5-amd64 #1 SMP Debian 4.19.37-5+deb10u1 (2019-07-19) x86_64
-	
-	Welcome to Coding Server maintained by Computer Centre of GNDEC, Ludhiana,
-	Specifically for the students of 1st year for their course:
-	                       =================================
-	
-	                        Programming for Problem Solving
-	
-	                       =================================
-	To know how to work, read:
-	
-	 https://github.com/gne-ldh/PPS/blob/master/Content/Notes/README.md
-	
-	
-	hsrai@computer-centre:~$ ls
-	public_html
+	radha@ubuntu:~$ ls
+	radha@ubuntu:~$ xmake create -l c first
+	radha@ubuntu:~$ cd first/
+	radha@ubuntu:~/first$ xmake
+	radha@ubuntu:~/first$ xmake run
+	radha@ubuntu:~/first$ nano src/main.c 
 
+	radha@ubuntu:~$ ls
+	public_html
+	radha@ubuntu:~$ xmake create -l c first
+	create first ...
+	  [+]: xmake.lua
+	  [+]: src/main.c
+	  [+]: .gitignore
+	create ok!
+	radha@ubuntu:~$ cd first/
+	radha@ubuntu:~/first$ xmake
+	checking for architecture ... x86_64
+	[ 50%]: ccache compiling.release src/main.c
+	[ 75%]: linking.release first
+	[100%]: build ok!
+	radha@ubuntu:~/first$ xmake run
+	hello world!
+	radha@ubuntu:~/first$ nano src/main.c 
 
 It will display something about itself, and may include some welcome
 message. The above message is the sample, The message, you get may be different.
