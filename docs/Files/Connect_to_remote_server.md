@@ -32,27 +32,6 @@ Launch `mosh`, use your userID, `code.gndec.ac.in` as server name, and `22`
 as port to connect remote server. Read the response from computer very carefully
 and act accordingly. 
 
-Once you have opened terminal, which is usually a big black rectangular
-area, in which there is a small solid rectangle (of the size of a single
-character), after some text like `hs@rai:~$ `, where `hs` is user on local
-computer named `rai`, like:
-
-	hs@rai:~$ 
-
-At the position of cursor (Solid Rectangle), you may type from keyboard. 
-Type following command.
-
-	hs@rai:~$ mosh hsrai@code.gdy.club
-
-`hs@rai:~` will be there already, and you need to type only:
-
-	mosh <UserID>@<ServerName>
-
-If you UserID is 20123015, and knowing that we will be working on server
-code.gdy.club, then you need to type:
-
-	mosh 2023015@code.gdy.club
-
 First time, if anyone try to connect to a new remote server, then he will be
 presented with following text:
 
@@ -75,35 +54,55 @@ by the computer, very carefully.)
 
 After this, once connection established (make sure Internet is working, and
 there is not typing error/mistake), remote server will request you for
-password. Enter you 
+password. Enter you password. Then you are connected to remote server, if you
+are autorised, and you entered correct information.
 
-	radha@ubuntu:~$ ls
-	radha@ubuntu:~$ xmake create -l c first
-	radha@ubuntu:~$ cd first/
-	radha@ubuntu:~/first$ xmake
-	radha@ubuntu:~/first$ xmake run
-	radha@ubuntu:~/first$ nano src/main.c 
+Once you are connected to remote server, you will be presented a big black rectangular
+area, in which there is a small solid rectangle (of the size of a single
+character), after some text like `hsrai@ubuntu:~$ `, where `hsrai` is user on remote
+server named `ubuntu`, like:
 
-	radha@ubuntu:~$ ls
-	public_html
-	radha@ubuntu:~$ xmake create -l c first
-	create first ...
-	  [+]: xmake.lua
-	  [+]: src/main.c
-	  [+]: .gitignore
-	create ok!
-	radha@ubuntu:~$ cd first/
-	radha@ubuntu:~/first$ xmake
-	checking for architecture ... x86_64
-	[ 50%]: ccache compiling.release src/main.c
-	[ 75%]: linking.release first
-	[100%]: build ok!
-	radha@ubuntu:~/first$ xmake run
-	hello world!
-	radha@ubuntu:~/first$ nano src/main.c 
+	Welcome to Coding Server maintained by
+	Computer Centre of GNDEC, Ludhiana,
+	Specifically for the students of
+	1st year for their course:
+	=================================
+ 	
+	  Programming for Problem Solving
+	  
+	=================================
+	To know how to work, read:
+	
+	 https://coe-gne.github.io/PPS/index.html or
+	 http://gdy.club/ppp
+	 
+	hsrai@ubuntu:~$ 
 
 It will display something about itself, and may include some welcome
 message. The above message is the sample, The message, you get may be different.
+
+At the position of cursor (Solid Rectangle), you may type from keyboard. 
+Type following command.
+
+	hsrai@ubuntu:~$ ls
+
+`hsai@ubuntu:~` will be there already, and you need to type only:
+
+	ls
+
+Type as below, for the user `radha`.
+
+	radha@ubuntu:~$ ls
+	radha@ubuntu:~$ xmake create -l c first
+	radha@ubuntu:~$ cd first/
+	radha@ubuntu:~/first$ xmake
+	radha@ubuntu:~/first$ xmake run
+	radha@ubuntu:~/first$ nano src/main.c 
+	
+When you type above commands, you will some response from computer as well. Complete interaction will look like:
+
+	radha@ubuntu:~$ ls
+	public_html
 
 Now you have entered in to a remote server. That may be a computer on
 network, physically placed on the same table, or may in Canada, Europe, or
