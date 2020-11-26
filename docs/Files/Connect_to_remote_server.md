@@ -90,19 +90,7 @@ Type following command.
 
 	ls
 
-Type as below, for the user `radha`.
-
-	radha@ubuntu:~$ ls
-	radha@ubuntu:~$ xmake create -l c first
-	radha@ubuntu:~$ cd first/
-	radha@ubuntu:~/first$ xmake
-	radha@ubuntu:~/first$ xmake run
-	radha@ubuntu:~/first$ nano src/main.c 
-	
-When you type above commands, you will some response from computer as well. Complete interaction will look like:
-
-	radha@ubuntu:~$ ls
-	public_html
+You will see list of files and direcrories, in your `home` at `remote server`.
 
 Now you have entered in to a remote server. That may be a computer on
 network, physically placed on the same table, or may in Canada, Europe, or
