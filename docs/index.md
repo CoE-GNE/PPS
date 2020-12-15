@@ -1,5 +1,6 @@
 # C PROGRAMMING LANGUAGE
 ## Hardeep Singh Rai
+## Jaswant Singh
 # Preface
 # [Way to work in Laboratory](Lab.md)
 
