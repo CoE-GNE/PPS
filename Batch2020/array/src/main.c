@@ -1,3 +1,6 @@
+// Execute file using
+// xmake drun < input.txt
+
 #include <stdio.h>
 
 const int SIZE = 10;
@@ -7,13 +10,12 @@ int main(int argc, char** argv)
 
     int rollNo[SIZE];
     
-//    rollNo[0] = 2001;
+//   Input from standard input device (Keybiard)
 
 
     for (int i = 0; i < SIZE; i++)
     {
-        rollNo[i] = 1801 + i;
-        
+        scanf("%d",  &rollNo[i]);
     }    
 
 // Dispaly roll no
