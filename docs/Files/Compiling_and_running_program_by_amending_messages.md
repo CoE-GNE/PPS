@@ -2,52 +2,77 @@
 
 # Compiling and running program by amending messages
 
-Now we will change the message written in file `message.m`.  Either you may
-edit this file, with your favorite editor (like `nano`, `pico`, `joe`,
-`emacs`, `vim`, `slap` or [some thing
-difference](https://www.tecmint.com/linux-command-line-editors/)).
+Now we will change the message written using `puts` function.  You may edit
+this file, with your favorite editor (like `nano`, `pico`, `joe`, `emacs`,
+`vim`, `slap` or [some thing different](https://www.tecmint.com/linux-command-line-editors/)).
 
 Also read [this](https://itsfoss.com/command-line-text-editors-linux/) for
 additional information.
 
-or we can copy file form the **message Bank**. We will follow the later
-approach. Below, we are copy file `102Address.m` from `Bank` folder: 
+or we can copy file form the
+[Bank](https://github.com/CoE-GNE/PPS/tree/master/Batch2020/Bank).  File
+name starting with `100` is our first program, then you may copy content
+from `101` and then `102` in file `main.c`.  Copy or type content of
+`102Address.m` from `Bank` folder, after creating a new project. Steps are
+given below:
 
-	|> cp ../src/application/Bank/102Address.m ../src/application/message.m
-	|> make
-	|> ./main
+$ xmake create -l c ex102
+create ex102 ...
+  [+]: xmake.lua
+  [+]: src/main.c
+  [+]: .gitignore
+create ok!
+$ cd ex102/
+$ nano src/main.c
+
+With `Down Arrow` go the 5th line (having `printf`), and delete it by
+pressing `^k`.  Copy content of
+[102Address.m](https://github.com/CoE-GNE/PPS/blob/master/Batch2020/Bank/102Address.m)
+(by selecting code part, right click and click on copy), then press middle
+button of mouse in file opened in `nano` editor.  Press `Enter/Return` to
+bring `retun 0;` to next line(optional).  Like wise you may you tab / spaces
+/ Enter to make code look beautiful.
+
+Read the file carefully.
+
+Exit and follow instructions to save the file.
+
+	$ xmake
+	checking for architecture ... x86_64
+	[ 50%]: ccache compiling.release src/main.c
+	[ 75%]: linking.release ex102
+	[100%]: build ok!
+	$ xmake run
 	Principal
 	Panth Rattan Shiri Gurcharan Singh Tohra Complex
 	Guru Nanak Dev Engineering College
 	Gill Park
 	Ludhiana - 141006
 	India
+	$ 
 
-Study `message.m`, which is, at present, a copy of `102Address.m` file and
-the output of the program.  You will find that we have used `puts()`
-function for each line.  It will be nice, if we can use only one `puts()`. 
-Try following:
+Study the file `main.c`, which is, at present, includes content of
+`102Address.m` file and the output of the program.  You will find that we
+have used `puts()` function for each line.  It will be nice, if we can use
+only one `puts()`.  Try following:
 	
-	|> cp ../src/application/Bank/103AddressOnePuts.m ../src/application/message.m
-	|> make
-	|> ./main
+Repeat the avoce procedure with file `103AddressOnePuts.m` from `Bank`, by
+creating a new project with `xmake` utility.
 
-Now, in file `message.m`, there is only one `puts()` function. But you will
+Now, in file `main.c`, there is only one `puts()` function. But you will
 find strange character in the message, which is `\n`. `\n` is equivalent of
 `Enter` or `Return` key of the keyboard. It will insert new line.
 
-In the above `message.m` we used one `puts()` and all the message typed
+In the file `main.c` we used one `puts()` and all the message typed
 without the use of `Enter` key. This makes to read it difficult. It goes
 outside the screen with. This problem can be resolved by typing `\` before
 hitting `Enter` at the desired location. Normally, we don't wish to type
 text beyond 72th column. So type `\` and press `Enter` somewhere near column
-number from 765 to 72. Study following case:
+number from 65 to 72. Study the content of
+`104AddressOnePutsContentMultiLine.m` and repeat above exercise with new C
+project using `xmake` utility.
 
-	|> cp ../src/application/Bank/104AddressOnePutsContentMultiLine.m ../src/application/message.m
-	|> make
-	|> ./main
-
-Now, study file ../src/application/Bank/105AddressOnePutsContentMultiLineBetter.m
+Now, study file `105AddressOnePutsContentMultiLineBetter.m`
 
 This file is named as "Better". Why? Do you agree or not? Discuss in
 "General Forum" at [Guru@GNE](http://guru.gndec.ac.in)
@@ -61,11 +86,7 @@ copy for 10 times, what you will do, if you are asked to repeat it for 100
 times.
 
 For such tasks, computer languages offer, looping facility. One of such
-facility, in C, is call `for`. Study next file:
-
-	|> cp ../src/application/Bank/106Punishment.m ../src/application/message.m
-	|> make
-	|> ./main
+facility, in C, is call `for`. Study next file `106Punishment.m`.
 
 What you found new in this file?
 
