@@ -16,14 +16,14 @@ from `101` and then `102` in file `main.c`.  Copy or type content of
 `102Address.m` from `Bank` folder, after creating a new project. Steps are
 given below:
 
-$ xmake create -l c ex102
-create ex102 ...
-  [+]: xmake.lua
-  [+]: src/main.c
-  [+]: .gitignore
-create ok!
-$ cd ex102/
-$ nano src/main.c
+	$ xmake create -l c ex102
+	create ex102 ...
+	  [+]: xmake.lua
+	  [+]: src/main.c
+	  [+]: .gitignore
+	create ok!
+	$ cd ex102/
+	$ nano src/main.c
 
 With `Down Arrow` go the 5th line (having `printf`), and delete it by
 pressing `^k`.  Copy content of
