@@ -27,11 +27,10 @@ int main(void)
 Just how to run this program depends on the system you are using.  If
 you are following our instructions at [Github](../Lab.html), then
 create the program in a file named `main.c` in folder `source`, then
-compile it with following commands from `build` directory (folder):
+compile it with following commands from `project` directory (folder):
 
 ```c
-cmake ..
-make
+xmake
 ``` 
 
 If you haven’t fumbled, not commited any mistake, such as omitting a
@@ -39,15 +38,14 @@ character or misspelling something, then compilation will proceed and
 you will read a message like:
 
 ```c
-[100%] Built target main
+[100%]: build ok!
 ```
 
-which mean you are able to built the target with name `main`, which is
-the outcome of compilation process. If you run `main` by typing the
-command:
+which mean you are able to built the target, which is the outcome of
+compilation process.  If you run the compiled program by typing the command:
 
 ```c
-./main
+xmake run
 ```
 
 it will print 
