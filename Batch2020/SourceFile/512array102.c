@@ -1,5 +1,5 @@
 // Execute file using
-// xmake drun < input.txt
+// xmake run < input.txt
 
 #include <stdio.h>
 
@@ -10,7 +10,7 @@ int main(int argc, char** argv)
 
     int rollNo[SIZE];
     
-//   Input from standard input device (Keybiard)
+//   Input from standard input device (Keyboard)
 
 
     for (int i = 0; i < SIZE; i++)
