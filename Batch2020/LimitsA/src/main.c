@@ -2,7 +2,7 @@
 
 int main(int argc, char** argv)
 {
-    signed char current = 1, // current started with some convenient value
+    unsigned char current = 1, // current started with some convenient value
         step = 1, // step size
         maxValue, minValue, // Maximum and Minmum, required result
         nextPositive = current + step, // next higher
@@ -21,8 +21,8 @@ int main(int argc, char** argv)
         minValue = nextNegative--;
     }    
     
-    printf("Min value %hhi\n", minValue);
-    printf("Max value %hhi\n", maxValue);
+    printf("Min value %hhu\n", minValue);
+    printf("Max value %hhu\n", maxValue);
 
     return 0;
 
