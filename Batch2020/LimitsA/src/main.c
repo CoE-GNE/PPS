@@ -2,7 +2,7 @@
 
 int main(int argc, char** argv)
 {
-    char current = 1, // current started with some convenient value
+    signed char current = 1, // current started with some convenient value
         step = 1, // step size
         maxValue, minValue, // Maximum and Minmum, required result
         nextPositive = current + step, // next higher
