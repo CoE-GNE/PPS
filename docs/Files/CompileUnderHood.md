@@ -10,7 +10,7 @@ cd build
 // Following commands are issued in build folder
 
 gcc ../src/*.c
-hsrai@ubuntu:~/public_html/PPS2020/PPS/Batch2020/sum/ComSteps$ ./a.out 
+hsrai@ubuntu:~/public_html/PPS2020/PPS/Batch2020/sum/build$ ./a.out 
 Enter two number: 3 4
 
 Sum: 3.000000 + 4.000000 = 7.000000
