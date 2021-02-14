@@ -1,7 +1,15 @@
 ## Compilation (All-in-one)
 
+Program has 4 files, 2 header (.h) and 2 C source code files (.c)
+
+See files at [https://github.com/CoE-GNE/PPS/tree/master/Batch2020/sum/src](https://github.com/CoE-GNE/PPS/tree/master/Batch2020/sum/src)
+
 ```
-gcc ../../sum/src/*.c
+cd build
+
+// Following commands are issued in build folder
+
+gcc ../src/*.c
 hsrai@ubuntu:~/public_html/PPS2020/PPS/Batch2020/sum/ComSteps$ ./a.out 
 Enter two number: 3 4
 
@@ -36,8 +44,8 @@ graph TD
 ```sh
 cpp <C source file with path> -o <Output file name with path>
 
-cpp ../../sum/src/main.c -o main.i
-cpp ../../sum/src/sum.c -o sum.i
+cpp ../src/main.c -o main.i
+cpp ../src/sum.c -o sum.i
 ```
 You may read resulting file, in any text editor, like
 
